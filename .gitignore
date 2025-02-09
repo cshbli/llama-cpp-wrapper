@@ -1,0 +1,5 @@
+# IDE / OS
+.DS_Store
+
+# Build Artifacts
+**/build/
