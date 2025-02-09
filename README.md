@@ -1,5 +1,23 @@
 # llama.cpp Class Encapsulation and Wrapper
 
+This project uses the `find_package()` CMake command to conveniently include `llama.cpp` in projects which live outside of the source tree.
+
+## Building
+
+It is important to first build/install llama.cpp using CMake. An example is provided here, but please see the llama.cpp build instructions for more detailed build instructions.
+
+```
+git clone https://github.com/ggerganov/llama.cpp
+cd llama.cpp
+cmake -S . -B build
+cmake --build build
+cmake --install build --prefix inst
+```
+
+## Examples
+
+- [Simple-Chat](examples/simple-chat/README.md)
+
 ## Deliberate design decision for C Interface
 1. Ensures Compatibility
 
