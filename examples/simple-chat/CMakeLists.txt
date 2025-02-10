@@ -5,7 +5,7 @@ set(TARGET llama-simple-chat)
 
 find_package(Llama REQUIRED)
 
-add_executable(${TARGET} ${CMAKE_CURRENT_LIST_DIR}/main.cpp ${CMAKE_CURRENT_LIST_DIR}/../../src/LLMInference.cpp)
+add_executable(${TARGET} ${CMAKE_CURRENT_LIST_DIR}/main.cpp ${CMAKE_CURRENT_LIST_DIR}/cmd_line_parse.cpp ${CMAKE_CURRENT_LIST_DIR}/../../src/LLMInference.cpp)
 # Add the external include directory
 target_include_directories(${TARGET} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/../../include)
 install(TARGETS ${TARGET} RUNTIME)

@@ -8,6 +8,8 @@ It is important to first build/install llama.cpp using CMake. An example is prov
 
 ```
 git clone https://github.com/ggerganov/llama.cpp
+# Or clone from my fork with slim version
+# git clonehttps://github.com/cshbli/llama.cpp.git
 cd llama.cpp
 cmake -S . -B build
 cmake --build build
